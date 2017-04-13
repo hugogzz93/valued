@@ -12,7 +12,7 @@ module Valued
       'must define a label method'
     end
 
-    def chart_datasets(objects)
+    def chart_datasets(objects, options)
       [{
         label: label,
         data: objects.map(&:value)
